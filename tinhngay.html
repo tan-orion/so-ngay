@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #da{
+            border-radius: 10px;
+            border: solid;
+        }
+        #but{
+            border-radius: 10px;
+            border: solid;
+
+        }
+    </style>
+</head>
+<body>
+<label for="da"></label>
+<input type="text" id="da" name="day" >
+<button id="but" type="button" onclick="songay()">Tính số ngày </button><br>
+<p id="ai"></p>
+
+
+</body>
+<script>
+function songay(){
+ let a = parseInt(document.getElementById('da').value);
+
+        switch (a){
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+             alert ('tháng có 31 ngày');
+             break;
+             case 4:
+              case 6:
+               case 9:
+                   alert ('tháng có 30 ngày');
+                   break;
+             case 2:
+
+                 alert('tháng có 29 hoạc 28');
+                 break;
+                 default :
+                     alert('không có gia trị');
+                     break;
+        }
+    }
+
+
+</script>
+</html>
